@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 2s;
+}
+
+li:hover {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 2px;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 190px;
+}
+
+.header {
+  padding: 20px;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url("./assets/bear.jpg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 2s;
+}
+
+.banner-space {
+  background-image: linear-gradient(rgba(255, 96, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./assets/space.jpg);
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-vara {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(./assets/vara.jpg);
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  width: 80%;
+  transition: all 2s;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.menu li {
+  margin-right: 50px;
+}
+
+.menu li:hover {
+  color: #fff;
+  background: url(./assets/cs.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bars {
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+.title {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  transform: translateY(-10px);
+}
+
+.fa-youtube {
+  font-size: 36px;
+  color: #fff;
+}
+
+.watch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.watch span {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.social .media {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+.social .bottom-media {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+}
+
+.social li {
+  list-style: none;
+  font-size: 24px;
+  color: #fff;
+  margin: 50px 0;
+}
+
+.social li:hover {
+  transform: scale(1.1);
+  color: #0c9;
+  text-decoration: none;
+}
+
+.message {
+  width: 40%;
+  color: rgb(255, 208, 208);
+  font-size: 16px;
+  padding: 0 20px;
+}
+.message .fas {
+  font-size: 2rem;
+  color: orange;
+}
+
+.author {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.main-text {
+  color: white;
+  background: url(./assets/forest.jpeg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.space-text {
+  color: white;
+  background: url(./assets/space.jpg) no-repeat center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vara-text {
+  color: white;
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 10%;
+}
+
+.season {
+  font-size: 8rem;
+  margin-top: 10%;
+}
+
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+    width: 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+    width: 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+    width: 0%;
+  }
+}
+
+
+.echo {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+.banner-vara .echo {
+  text-align: center;
+}
+
+.schedule-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#150a20, rgba(0, 0, 0, 0.4));
+}
+
+.schedule-space {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background: linear-gradient(#050101, rgba(0, 0, 0, 0.4));
+}
+
+.schedule-vara {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#000000, rgba(0, 0, 0, 0.4));
+}
+
+
+.schedule .fas {
+  font-size: 4rem;
+  color: rgb(1, 78, 141);
+  margin: 30px;
+}
+
+.schedule .logo {
+  width: 150px;
+  margin: 30px 0;
+}
+
+.schedule img {
+  object-fit: contain;
+}
+
+
+
+.about {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
+  url("./assets/re.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about p {
+  font-size: 1.3rem;
+  color: #999;
+  margin: 10px;
+  text-align: justify;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+}
