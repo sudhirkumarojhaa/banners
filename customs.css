@@ -16,13 +16,11 @@ li {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
-  transition: all 2s;
 }
 
 li:hover {
   text-decoration: none;
   color: #fff;
-
 }
 
 h1,
@@ -54,21 +52,23 @@ img {
 }
 
 .logo {
-  width: 190px;
+  width: 200px;
 }
 
+.brand {
+  width: 180px;
+}
 .header {
   padding: 20px;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url("./assets/bear.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(./assets/bearbg.jpg);
   height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  transition: all 2s;
 }
 
 .banner-space {
@@ -97,14 +97,12 @@ img {
   position: absolute;
   bottom: 100px;
   width: 80%;
-  transition: all 2s;
 }
 
 .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .menu li {
@@ -180,6 +178,7 @@ img {
   font-size: 16px;
   padding: 0 20px;
 }
+
 .message .fas {
   font-size: 2rem;
   color: orange;
@@ -214,10 +213,9 @@ img {
 }
 
 .season {
-  font-size: 8rem;
+  font-size: 6rem;
   margin-top: 10%;
 }
-
 
 @keyframes flow {
   0% {
@@ -233,7 +231,6 @@ img {
     width: 0%;
   }
 }
-
 
 .echo {
   color: #fff;
@@ -252,16 +249,22 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#150a20, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(-155deg, rgb(1, 0, 3) 43%, rgba(0, 0, 0, 0.5)101%), url(./assets/forest.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .schedule-space {
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- background: linear-gradient(#050101, rgba(0, 0, 0, 0.4));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(-155deg, rgb(1, 0, 3) 43%, rgba(0, 0, 0, 0.5)101%), url(./assets/space.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .schedule-vara {
@@ -270,9 +273,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#000000, rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(-155deg, rgb(1, 0, 3) 43%, rgba(0, 0, 0, 0.5)101%), url(./assets/vara.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .schedule .fas {
   font-size: 4rem;
@@ -282,16 +287,14 @@ img {
 
 .schedule .logo {
   width: 150px;
-  margin: 30px 0;
 }
 
-.schedule img {
+.logo>img {
   object-fit: contain;
+  margin: 50px 0;
 }
 
-
-
-.about {
+.about-main {
   height: 100vh;
   margin: 0 auto;
   padding: 40px;
@@ -299,32 +302,94 @@ img {
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
-  url("./assets/re.png");
+  background-image: linear-gradient(133deg, rgb(0, 0, 0, 1) 43%, rgba(0, 0, 0, 0.5)101%), url(./assets/bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about p {
-  font-size: 1.3rem;
-  color: #999;
-  margin: 10px;
-  text-align: justify;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
 }
 
+tr {
+  margin: 10px 0;
+}
 
+td,
+th {
+  background-color: rgba(1, 8, 47, 0.5);
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+  color: rgb(236, 189, 189);
+}
+
+th {
+  font-size: 24px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(197, 197, 197, 0.2);
+}
+
+table .far {
+  font-size: 36px;
+  color: rgba(255, 96, 0, 0.7);
+  animation: pulse 3s alternate infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.table-title {
+  font-size: 3.4rem;
+  padding: 30px 0;
+}
 
 @media screen and (max-width: 991px) {
   .container {
     width: 100%;
   }
-
   .menu {
     display: none;
   }
-
   .bars {
     display: block;
+  }
+  .banner {
+    height: 900px;
+  }
+  .season{
+    margin-top: 70%;
+    padding: 20px;
+  }
+  .echo ,
+  .banner-content ,
+  .about-main ,.social {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .vara-text{
+    margin-top: 40%;
+    font-size: 4.3rem;
+  }
+  .logo {
+    margin: 20px 0;
+    width: 150px;
   }
 }
