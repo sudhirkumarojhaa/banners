@@ -58,6 +58,7 @@ img {
 .brand {
   width: 180px;
 }
+
 .header {
   padding: 20px;
 }
@@ -110,10 +111,7 @@ img {
 }
 
 .menu li:hover {
-  color: #fff;
-  background: url(./assets/cs.jpg) no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #0c9;
 }
 
 .bars {
@@ -295,9 +293,8 @@ img {
 }
 
 .about-main {
-  height: 100vh;
   margin: 0 auto;
-  padding: 40px;
+  padding: 100px 1px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -322,8 +319,8 @@ td,
 th {
   background-color: rgba(1, 8, 47, 0.5);
   text-align: left;
-  padding: 8px;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 12px;
   color: rgb(236, 189, 189);
 }
 
@@ -337,16 +334,15 @@ tr:nth-child(even) {
 
 table .far {
   font-size: 36px;
-  color: rgba(255, 96, 0, 0.7);
   animation: pulse 3s alternate infinite;
 }
 
 @keyframes pulse {
   from {
-    transform: scale(1.2);
+    color: #0c9;
   }
   to {
-    transform: scale(1.1);
+    color: rgb(252, 92, 92);
   }
 }
 
@@ -356,7 +352,7 @@ table .far {
 
 .table-title {
   font-size: 3.4rem;
-  padding: 30px 0;
+  padding: 30px 60px;
 }
 
 @media screen and (max-width: 991px) {
@@ -372,19 +368,20 @@ table .far {
   .banner {
     height: 900px;
   }
-  .season{
+  .season {
     margin-top: 70%;
     padding: 20px;
   }
-  .echo ,
-  .banner-content ,
-  .about-main ,.social {
+  .echo,
+  .banner-content,
+  .about-main,
+  .social {
     display: none;
   }
   .title {
     font-size: 2rem;
   }
-  .vara-text{
+  .vara-text {
     margin-top: 40%;
     font-size: 4.3rem;
   }
